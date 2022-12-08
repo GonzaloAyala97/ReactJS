@@ -1,14 +1,17 @@
+
 import React from "react";
 import "./style.css";
+import "../CartWidget";
+import CartWidget from "../CartWidget";
 
-
-const Navbar = ({children , onClose}) => {
+const Navbar = () => {
     return(
     <div className="navbar">
-        <div className="close-button-container">
-            <button onClick={onClose} className="close-button">Carrito</button>
+        <div className="navbar-menu-logo">
+          <h2 className="navbar-logo">Futuro Nombre</h2>
         </div>
-        {children}
+    
+        <CartWidget />
     </div>
     )
     
